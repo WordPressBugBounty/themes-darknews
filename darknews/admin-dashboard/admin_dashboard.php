@@ -163,8 +163,8 @@ if (!class_exists('AF_themes_info')) {
         'darknews', // Parent slug.
         __('Upgrade', 'darknews'), // Page title.
         '<span id="aft-upgrade-menu-item">' . __('Upgrade', 'darknews') .'</span>', // Menu title.
-        capability: 'manage_options', // Capability.
-        menu_slug: esc_url('https://afthemes.com/products/darknews-pro/') // Menu slug.
+        'manage_options', // Capability.
+        esc_url('https://afthemes.com/products/darknews-pro/') // Menu slug.
         
       );
     }
