@@ -36,7 +36,7 @@ if (!function_exists('darknews_setup')):
          * If you're building a theme based on DarkNews, use a find and replace
          * to change 'darknews' to the name of your theme in all the template files.
          */
-        load_theme_textdomain('darknews', get_template_directory() . '/languages');
+        // load_theme_textdomain('darknews', get_template_directory() . '/languages');
 
         // Add default posts and comments RSS feed links to head.
         add_theme_support('automatic-feed-links');
@@ -395,8 +395,8 @@ function darknews_print_pre($args)
 
 }
 
-add_action( 'after_setup_theme', 'darknews_transltion_init');
+add_action( 'init', 'darknews_transltion_init');
 
 function darknews_transltion_init() {
-    load_theme_textdomain( 'darknews', false, get_template_directory()  . '/languages' );
+    load_theme_textdomain( 'darknews', get_template_directory()  . '/languages' );
 }
