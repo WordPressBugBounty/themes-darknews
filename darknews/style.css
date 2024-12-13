@@ -4,16 +4,14 @@ Theme URI: https://afthemes.com/products/darknews/
 Author: AF themes
 Author URI: https://www.afthemes.com/
 Description: DarkNews is an advanced dark WordPress theme that's appropriate for a news, blog and magazine website. The theme includes a range of free starting pages that can be imported with a single click to create a great news portal. With 9+ custom widgets and widget areas, the theme is fully widgetized, allowing users to control site content. It also has a light and dark color mode, so you can view articles and blog posts in a trendy way. It also contains a number of helpful customizer options for building a visually appealing news site. You can configure it as you like to see how it looks before making any improvements using the live customizer. It's compatible with Elementor, Gutenberg blocks and RTL, as well as the WooCommerce plugin, which enables you to blend an online shop with our newspaper theme. The theme is ideal for a news, journal, magazine, publishing, or review site, as well as blogging. It's well-designed to bring the website to the top of search engines, and people will get outstanding support from the team if they have any problems when using it.
-Version: 3.1.2
-Requires at least: 5.3
-WC requires at least: 3.0
-WC tested up to: 9.3
-Requires PHP: 5.6
+Version: 3.2.0
+Requires at least: 4.0
+Requires PHP: 5.3
 Tested up to: 6.7
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: darknews
-Tags: news, blog, entertainment, one-column, two-columns, grid-layout, block-styles, left-sidebar, right-sidebar, custom-header, flexible-header, custom-background, custom-colors, custom-menu, featured-images, full-width-template, post-formats, sticky-post, rtl-language-support, footer-widgets, translation-ready, theme-options, threaded-comments
+Tags: news, blog, entertainment, one-column, two-columns, three-columns, four-columns, grid-layout, block-patterns, block-styles, left-sidebar, right-sidebar, custom-header, flexible-header, custom-background, custom-logo, custom-menu, custom-colors, featured-images, full-width-template, post-formats, rtl-language-support, footer-widgets, translation-ready, theme-options, threaded-comments, wide-blocks
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -10493,3 +10491,46 @@ header+.af-whole-wrapper #content.container-wrapper {
 }
 
 .blockspare-inner-blocks.blockspare-inner-wrapper-blocks {overflow: hidden;}
+
+/* builder compatible css */
+.vcwb button,
+.fl-builder button{
+    height: unset;
+}
+
+body.full-width-content.aft-pagebuilder-blank-canvas .aft-pagebuilder-page-section>.alignwide,
+.aft-pagebuilder-blank-canvas .aft-pagebuilder-page-section>.alignwide {
+    max-width: 1244px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+}
+.aft-pagebuilder-blank-canvas .aft-pagebuilder-page-section>:where(:not(.alignleft):not(.alignright):not(.alignfull)),
+.aft-pagebuilder-blank-canvas .aft-pagebuilder-page-section>.aligncenter{
+    max-width: 740px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.aft-pagebuilder-page-section > .vce-row-container{
+    max-width: 1244px;
+}
+.aft-pagebuilder-page-section > .elementor,
+.aft-pagebuilder-page-section > .fl-builder-content ,
+.aft-pagebuilder-full-width-content .site-main>.rz-root__container,
+.aft-pagebuilder-full-width-content .site-main>.fl-builder-content {
+    max-width: unset;
+}
+.container-wrapper #primary.aft-pagebuilder-full-width-content {
+    width: 100%;
+    padding: 0;
+}
+body.aft-dark-mode .vce-faq-toggle-title-text {
+    color: #000;
+}
+body.aft-dark-mode .brz .brz-css-gvgoE.brz-section .brz-section__content {
+    background: #fff;
+}
+/* builder compatible css */

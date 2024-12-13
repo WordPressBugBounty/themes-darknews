@@ -11,32 +11,32 @@
 .woocommerce .quantity .qty{
 	height: 38px;
 }
-.woocommerce #respond input#submit.disabled,
-.woocommerce #respond input#submit:disabled,
-.woocommerce #respond input#submit:disabled[disabled],
-.woocommerce a.button.disabled,
-.woocommerce a.button:disabled,
-.woocommerce a.button:disabled[disabled],
-.woocommerce button.button.disabled,
-.woocommerce button.button:disabled,
-.woocommerce button.button:disabled[disabled],
-.woocommerce input.button.disabled,
-.woocommerce input.button:disabled,
+.woocommerce #respond input#submit.disabled, 
+.woocommerce #respond input#submit:disabled, 
+.woocommerce #respond input#submit:disabled[disabled], 
+.woocommerce a.button.disabled, 
+.woocommerce a.button:disabled, 
+.woocommerce a.button:disabled[disabled], 
+.woocommerce button.button.disabled, 
+.woocommerce button.button:disabled, 
+.woocommerce button.button:disabled[disabled], 
+.woocommerce input.button.disabled, 
+.woocommerce input.button:disabled, 
 .woocommerce input.button:disabled[disabled],
-.woocommerce #respond input#submit,
-.woocommerce a.button,
-.woocommerce button.button,
+.woocommerce #respond input#submit, 
+.woocommerce a.button, 
+.woocommerce button.button, 
 .woocommerce input.button,
-.woocommerce #respond input#submit.alt,
-.woocommerce a.button.alt,
-.woocommerce button.button.alt,
+.woocommerce #respond input#submit.alt, 
+.woocommerce a.button.alt, 
+.woocommerce button.button.alt, 
 .woocommerce input.button.alt{
 	background-color: #d72924;
 	color: #fff;
 }
-.woocommerce #respond input#submit.alt:hover,
-.woocommerce a.button.alt:hover,
-.woocommerce button.button.alt:hover,
+.woocommerce #respond input#submit.alt:hover, 
+.woocommerce a.button.alt:hover, 
+.woocommerce button.button.alt:hover, 
 .woocommerce input.button.alt:hover{
 	background-color: #000;
 }
@@ -44,20 +44,20 @@
 	padding: 10px;
 	background: transparent;
 }
-.woocommerce #content table.cart td.actions .input-text,
-.woocommerce table.cart td.actions .input-text,
-.woocommerce-page #content table.cart td.actions .input-text,
+.woocommerce #content table.cart td.actions .input-text, 
+.woocommerce table.cart td.actions .input-text, 
+.woocommerce-page #content table.cart td.actions .input-text, 
 .woocommerce-page table.cart td.actions .input-text{
 	width: 55%;
 	height: 38px;
 }
-.woocommerce form .form-row input.input-text,
+.woocommerce form .form-row input.input-text, 
 .woocommerce form .form-row textarea{
 	padding: 5px;
 }
 .woocommerce-form__label-for-checkbox.checkbox input[type="checkbox"] {
-	position: relative;
-	margin-left: 0;
+    position: relative;
+    margin-left: 0;
 }
 .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit{
 	border-radius: 0;
@@ -82,8 +82,8 @@
 .woocommerce *{
 	white-space: normal;
 }
-.entry-content ul:not([class*="wp-"]):not(.awpa-contact-info).woocommerce-error,
-.entry-content ul:not([class*="wp-"]):not(.awpa-contact-info).woocommerce-info,
+.entry-content ul:not([class*="wp-"]):not(.awpa-contact-info).woocommerce-error, 
+.entry-content ul:not([class*="wp-"]):not(.awpa-contact-info).woocommerce-info, 
 .entry-content ul:not([class*="wp-"]):not(.awpa-contact-info).woocommerce-message{
 	padding-left: 3.5em;
 }
@@ -109,9 +109,9 @@
 .woocommerce-account .addresses .title .edit:hover{
 	border: none;
 }
-.woocommerce #respond input#submit.alt:hover,
-.woocommerce a.button.alt:hover,
-.woocommerce button.button.alt:hover,
+.woocommerce #respond input#submit.alt:hover, 
+.woocommerce a.button.alt:hover, 
+.woocommerce button.button.alt:hover, 
 .woocommerce input.button.alt:hover,
 .woocommerce a.added_to_cart:hover {
 	background-color: #dfdcde;
@@ -125,7 +125,7 @@ body.aft-dark-mode .entry-content > [class*="wp-block-"] .woocommerce a:not(.has
 	color: #4a4a4a;
 	border: none;
 }
-.woocommerce input[type="checkbox"],
+.woocommerce input[type="checkbox"], 
 .woocommerce input[type="radio"] {
 	vertical-align: middle;
 	margin: 0;
@@ -134,9 +134,9 @@ body.aft-dark-mode .entry-content > [class*="wp-block-"] .woocommerce a:not(.has
 .woocommerce input[type="radio"] + *{
 	vertical-align: middle;
 }
-.woocommerce #content table.cart td.actions .coupon,
-.woocommerce table.cart td.actions .coupon,
-.woocommerce-page #content table.cart td.actions .coupon,
+.woocommerce #content table.cart td.actions .coupon, 
+.woocommerce table.cart td.actions .coupon, 
+.woocommerce-page #content table.cart td.actions .coupon, 
 .woocommerce-page table.cart td.actions .coupon{
 	display: flex;
 	min-width: 50%;
@@ -192,10 +192,10 @@ body.woocommerce-js form.woocommerce-checkout .woocommerce-checkout-review-order
 .woocommerce-checkout.woocommerce table.shop_table {
 	border: 1px solid rgba(200,200,200,.5);
 	-webkit-box-shadow: none;
-	box-shadow: none;
+	        box-shadow: none;
 }
 .woocommerce form > p:last-child{
-	padding: 5px;
+    padding: 5px;
 }
 /* ------- newly additional css ----- */
 
@@ -203,8 +203,8 @@ body.woocommerce-js form.woocommerce-checkout .woocommerce-checkout-review-order
 body.aft-dark-mode legend,
 body.aft-dark-mode .woocommerce-ordering select,
 body.aft-dark-mode .select2-container--default .select2-selection--single .select2-selection__rendered,
-body.aft-dark-mode .woocommerce-error,
-body.aft-dark-mode .woocommerce-info,
+body.aft-dark-mode .woocommerce-error, 
+body.aft-dark-mode .woocommerce-info, 
 body.aft-dark-mode .woocommerce-message,
 body.aft-dark-mode .woocommerce-Tabs-panel,
 body.aft-dark-mode .woocommerce-info a,
@@ -219,22 +219,22 @@ body.aft-dark-mode .select2-container--default .select2-selection--single{
 }
 body.aft-dark-mode.woocommerce div.product .woocommerce-tabs ul.tabs li.active,
 body.aft-dark-mode.woocommerce div.product .woocommerce-tabs ul.tabs::before,
-body.aft-dark-mode #add_payment_method .cart-collaterals .cart_totals tr td,
-body.aft-dark-mode #add_payment_method .cart-collaterals .cart_totals tr th,
-body.aft-dark-mode.woocommerce-cart .cart-collaterals .cart_totals tr td,
-body.aft-dark-mode.woocommerce-cart .cart-collaterals .cart_totals tr th,
-body.aft-dark-mode .woocommerce-checkout .cart-collaterals .cart_totals tr td,
+body.aft-dark-mode #add_payment_method .cart-collaterals .cart_totals tr td, 
+body.aft-dark-mode #add_payment_method .cart-collaterals .cart_totals tr th, 
+body.aft-dark-mode.woocommerce-cart .cart-collaterals .cart_totals tr td, 
+body.aft-dark-mode.woocommerce-cart .cart-collaterals .cart_totals tr th, 
+body.aft-dark-mode .woocommerce-checkout .cart-collaterals .cart_totals tr td, 
 body.aft-dark-mode .woocommerce-checkout .cart-collaterals .cart_totals tr th,
 body.aft-dark-mode .woocommerce table.shop_table td,
 body.aft-dark-mode .woocommerce table.shop_table th,
 body.aft-dark-mode .woocommerce table.shop_table{
 	border-color: rgba(255, 255, 255, 0.1);
 }
-body.aft-dark-mode .woocommerce-error,
-body.aft-dark-mode .woocommerce-info,
+body.aft-dark-mode .woocommerce-error, 
+body.aft-dark-mode .woocommerce-info, 
 body.aft-dark-mode .woocommerce-message,
-body.aft-dark-mode #add_payment_method #payment,
-body.aft-dark-mode.woocommerce-cart #payment,
+body.aft-dark-mode #add_payment_method #payment, 
+body.aft-dark-mode.woocommerce-cart #payment, 
 body.aft-dark-mode.woocommerce-checkout #payment{
 	background: #212121;
 }

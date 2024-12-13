@@ -36,7 +36,8 @@
             <?php
             the_post_navigation(array(
                 'prev_text' => __('<span class="em-post-navigation">Previous:</span> %title', 'darknews'),
-                'next_text' => __('<span class="em-post-navigation">Next:</span> %title', 'darknews'),                
+                'next_text' => __('<span class="em-post-navigation">Next:</span> %title', 'darknews'),
+                // 'in_same_term' => true,
                 'screen_reader_text' => __('Continue Reading', 'darknews'),
             ));
             ?>
