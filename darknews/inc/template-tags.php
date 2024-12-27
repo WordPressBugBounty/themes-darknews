@@ -39,9 +39,7 @@ if (!function_exists('darknews_post_categories')) :
           $darknews_term_meta = get_option($darknews_color_id);
           $darknews_color_class = ($darknews_term_meta) ? $darknews_term_meta['color_class_term_meta'] : 'category-color-1';
 
-          
-
-                        $darknews_output .= '<li class="meta-category">
+          $darknews_output .= '<li class="meta-category">
                              <a class="darknews-categories ' . esc_attr($darknews_color_class) . '" aria-label="' . esc_attr($post_category->name) . '" href="' . esc_url(get_category_link($post_category)) . '">
                                  ' . esc_html($post_category->name) . '
                              </a>
