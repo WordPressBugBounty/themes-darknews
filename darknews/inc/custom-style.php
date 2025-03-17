@@ -29,104 +29,114 @@ if (!function_exists('darknews_custom_style')) {
 
 
         ob_start();
-        ?>
+?>
 
-        <?php if (!empty($dark_background_color)): ?>
-        body.aft-dark-mode #sidr,
-        body.aft-dark-mode,
-        body.aft-dark-mode #af-preloader {
-        background-color: <?php darknews_esc_custom_style($dark_background_color) ?>;
-        }
-    <?php endif; ?>
+        <?php if (!empty($dark_background_color)) : ?>
+            body.aft-dark-mode #sidr,
+            body.aft-dark-mode,
+            body.aft-dark-mode #af-preloader {
+            background-color: <?php darknews_esc_custom_style($dark_background_color) ?>;
+            }
+        <?php endif; ?>
 
-        <?php if (!empty($light_background_color)): ?>
-        body.aft-default-mode #sidr,
-        body.aft-default-mode #af-preloader {
-        background-color: <?php darknews_esc_custom_style($light_background_color) ?>;
-        }
-        body.aft-default-mode.custom-background,
-        body.aft-default-mode {
-        background-color: <?php darknews_esc_custom_style($light_background_color) ?> ;
-        }
-    <?php endif; ?>
+        <?php if (!empty($light_background_color)) : ?>
+            body.aft-default-mode #sidr,
+            body.aft-default-mode #af-preloader {
+            background-color: <?php darknews_esc_custom_style($light_background_color) ?>;
+            }
+            body.aft-default-mode.custom-background,
+            body.aft-default-mode {
+            background-color: <?php darknews_esc_custom_style($light_background_color) ?> ;
+            }
+        <?php endif; ?>
 
-    <?php if (!empty($secondary_color)): ?>
-            .woocommerce span.onsale,
-            .woocommerce #respond input#submit.disabled, 
-            .woocommerce #respond input#submit:disabled, 
-            .woocommerce #respond input#submit:disabled[disabled], 
-            .woocommerce a.button.disabled, 
-            .woocommerce a.button:disabled, 
-            .woocommerce a.button:disabled[disabled], 
-            .woocommerce button.button.disabled, 
-            .woocommerce button.button:disabled, 
-            .woocommerce button.button:disabled[disabled], 
-            .woocommerce input.button.disabled, 
-            .woocommerce input.button:disabled, 
+        <?php if (!empty($secondary_color)) : ?>
+            .woocommerce #respond input#submit.disabled,
+            .woocommerce #respond input#submit:disabled,
+            .woocommerce #respond input#submit:disabled[disabled],
+            .woocommerce a.button.disabled,
+            .woocommerce a.button:disabled,
+            .woocommerce a.button:disabled[disabled],
+            .woocommerce button.button.disabled,
+            .woocommerce button.button:disabled,
+            .woocommerce button.button:disabled[disabled],
+            .woocommerce input.button.disabled,
+            .woocommerce input.button:disabled,
             .woocommerce input.button:disabled[disabled],
-            .woocommerce #respond input#submit, 
-            .woocommerce a.button, 
-            .woocommerce button.button, 
+            .woocommerce #respond input#submit,
+            .woocommerce a.button,
+            .woocommerce button.button,
             .woocommerce input.button,
-            .woocommerce #respond input#submit.alt, 
-            .woocommerce a.button.alt, 
-            .woocommerce button.button.alt, 
+            .woocommerce #respond input#submit.alt,
+            .woocommerce a.button.alt,
+            .woocommerce button.button.alt,
             .woocommerce input.button.alt,
 
-            .widget-title-fill-and-border .wp-block-group__inner-container h1.wp-block-heading,
-            .widget-title-fill-and-border .wp-block-group__inner-container h2.wp-block-heading,
-            .widget-title-fill-and-border .wp-block-group__inner-container h3.wp-block-heading,
-            .widget-title-fill-and-border .wp-block-group__inner-container h4.wp-block-heading,
-            .widget-title-fill-and-border .wp-block-group__inner-container h5.wp-block-heading,
-            .widget-title-fill-and-border .wp-block-group__inner-container h6.wp-block-heading,
-            .widget-title-fill-and-no-border .wp-block-group__inner-container h1.wp-block-heading,
-            .widget-title-fill-and-no-border .wp-block-group__inner-container h2.wp-block-heading,
-            .widget-title-fill-and-no-border .wp-block-group__inner-container h3.wp-block-heading,
-            .widget-title-fill-and-no-border .wp-block-group__inner-container h4.wp-block-heading,
-            .widget-title-fill-and-no-border .wp-block-group__inner-container h5.wp-block-heading,
-            .widget-title-fill-and-no-border .wp-block-group__inner-container h6.wp-block-heading,
+            .order-again .button:hover,
+            .woocommerce a.button.add_to_cart_button:hover,
+            .woocommerce-Address .edit:hover,
+            .woocommerce-Button:hover,
+            .wc-block-components-button:hover,
+            .woocommerce #respond input#submit.alt:hover,
+            .woocommerce a.button.alt:hover,
+            .woocommerce button.button.alt:hover,
+            .woocommerce input.button.alt:hover,
+            .woocommerce-active a.added_to_cart :hover,
+            .woocommerce a.added_to_cart:hover,
+            body.aft-default-mode .entry-content a.wc-block-components-button,
+            body .wc-block-components-button,
+            .woocommerce-account .addresses .title .edit,
+
+            .wc-block-checkout .wp-block-button__link,
+            :root .wc-block-featured-product__link :where(.wp-element-button, .wp-block-button__link),
+            :root .wc-block-featured-category__link :where(.wp-element-button, .wp-block-button__link),
+            .woocommerce-notices-wrapper .button,
+            .wc-block-grid .wp-block-button__link,
+            .wp-block-button.wc-block-components-product-button .wp-block-button__link,
+            .wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link,
+            button.wc-block-mini-cart__button,
+            .woocommerce ul.products li.product .button:hover,
+
+            .widget-title-fill-and-border .wp-block-search__label,
+            .widget-title-fill-and-no-border .wp-block-search__label,
+            .widget-title-fill-and-border .wp-block-group .wp-block-heading,
+            .widget-title-fill-and-no-border .wp-block-group .wp-block-heading,
 
             .widget-title-fill-and-border .wp_post_author_widget .widget-title .header-after,
             .widget-title-fill-and-no-border .wp_post_author_widget .widget-title .header-after,
 
-            footer .aft-small-social-menu ul li a:hover, 
+            footer .aft-small-social-menu ul li a:hover,
             header .top-header .aft-small-social-menu ul li a:hover,
             .darknews_author_info_widget .aft-small-social-menu ul li a:hover,
             footer .aft-small-social-menu ul li a:hover,
             body.widget-title-border-center .widget-title .heading-line-before,
-            body.widget-title-border-bottom .header-after1 .heading-line-before, 
+            body.widget-title-border-bottom .header-after1 .heading-line-before,
             body.widget-title-border-bottom .widget-title .heading-line-before,
             body .af-cat-widget-carousel a.darknews-categories.category-color-1,
-            .widget-title-fill-and-no-border .widget-title .heading-line, 
-            .widget-title-fill-and-border .widget-title .heading-line, 
-            .widget-title-border-bottom .wp-block-group__inner-container h1.wp-block-heading::before,
-            .widget-title-border-bottom .wp-block-group__inner-container h2.wp-block-heading::before,
-            .widget-title-border-bottom .wp-block-group__inner-container h3.wp-block-heading::before,
-            .widget-title-border-bottom .wp-block-group__inner-container h4.wp-block-heading::before,
-            .widget-title-border-bottom .wp-block-group__inner-container h5.wp-block-heading::before,
-            .widget-title-border-bottom .wp-block-group__inner-container h6.wp-block-heading::before,
+            .widget-title-fill-and-no-border .widget-title .heading-line,
+            .widget-title-fill-and-border .widget-title .heading-line,
+            .widget-title-border-bottom .wp-block-search__label::before,
+            .widget-title-border-bottom .wp-block-group .wp-block-heading::before,
             .widget-title-border-bottom .wp_post_author_widget .widget-title .header-after::before,
-            .widget-title-border-center .wp-block-group__inner-container h1.wp-block-heading::before,
-            .widget-title-border-center .wp-block-group__inner-container h2.wp-block-heading::before,
-            .widget-title-border-center .wp-block-group__inner-container h3.wp-block-heading::before,
-            .widget-title-border-center .wp-block-group__inner-container h4.wp-block-heading::before,
-            .widget-title-border-center .wp-block-group__inner-container h5.wp-block-heading::before,
-            .widget-title-border-center .wp-block-group__inner-container h6.wp-block-heading::before,
+            .widget-title-border-center .wp-block-search__label::before,
+            .widget-title-border-center .wp-block-group .wp-block-heading::before,
             .widget-title-border-center .wp_post_author_widget .widget-title .heading-line-before,
             .widget-title-border-center .wp_post_author_widget .widget-title .header-after::before,
 
-            .aft-posts-tabs-panel .nav-tabs>li>a.active, 
+            .aft-posts-tabs-panel .nav-tabs>li>a.active,
             .aft-main-banner-wrapper .widget-title .heading-line,
             a.sidr-class-sidr-button-close,
+            .aft-default-mode .entry-content button.button:hover,
+            .aft-default-mode .entry-content a.button:hover,
+            .aft-dark-mode .entry-content button.button:hover,
+            .aft-dark-mode .entry-content a.button:hover,
 
-            .widget-title-fill-and-border .wp-block-group__inner-container h1.wp-block-heading::before,
-            .widget-title-fill-and-border .wp-block-group__inner-container h2.wp-block-heading::before,
-            .widget-title-fill-and-border .wp-block-group__inner-container h3.wp-block-heading::before,
-            .widget-title-fill-and-border .wp-block-group__inner-container h4.wp-block-heading::before,
-            .widget-title-fill-and-border .wp-block-group__inner-container h5.wp-block-heading::before,
-            .widget-title-fill-and-border .wp-block-group__inner-container h6.wp-block-heading::before,
+            .widget-title-fill-and-border .wp-block-search__label::before,
+            .widget-title-fill-and-border .wp-block-group .wp-block-heading::before,
 
-            body.aft-default-mode.woocommerce span.onsale,
+            body.aft-dark-mode .is-style-fill a.wp-block-button__link:not(.has-text-color),
+            body.aft-default-mode .is-style-fill a.wp-block-button__link:not(.has-text-color),
+
             body.aft-dark-mode input[type="button"],
             body.aft-dark-mode input[type="reset"],
             body.aft-dark-mode input[type="submit"],
@@ -143,7 +153,7 @@ if (!function_exists('darknews_custom_style')) {
             body .darknews-pagination .nav-links .page-numbers.current,
             body #scroll-up,
             .aft-readmore-wrapper a.aft-readmore:hover,
-            body.aft-dark-mode .aft-readmore-wrapper a.aft-readmore:hover, 
+            body.aft-dark-mode .aft-readmore-wrapper a.aft-readmore:hover,
             footer.site-footer .aft-readmore-wrapper a.aft-readmore:hover,
             .aft-readmore-wrapper a.aft-readmore:hover,
             .read-img .trending-no,
@@ -151,13 +161,13 @@ if (!function_exists('darknews_custom_style')) {
             background-color: <?php darknews_esc_custom_style($secondary_color) ?>;
             }
 
-            .grid-design-texts-over-image .aft-readmore-wrapper a.aft-readmore:hover, 
+            .grid-design-texts-over-image .aft-readmore-wrapper a.aft-readmore:hover,
             .aft-readmore-wrapper a.aft-readmore:hover,
-            body.aft-dark-mode .aft-readmore-wrapper a.aft-readmore:hover, 
-            body.aft-default-mode .aft-readmore-wrapper a.aft-readmore:hover, 
+            body.aft-dark-mode .aft-readmore-wrapper a.aft-readmore:hover,
+            body.aft-default-mode .aft-readmore-wrapper a.aft-readmore:hover,
 
             body.single .entry-header .aft-post-excerpt-and-meta .post-excerpt,
-            .aft-posts-tabs-panel .nav-tabs, 
+            .aft-posts-tabs-panel .nav-tabs,
             .widget-title-fill-and-border .widget-title,
             body.aft-dark-mode.single span.tags-links a:hover,
             .darknews-pagination .nav-links .page-numbers.current,
@@ -165,42 +175,46 @@ if (!function_exists('darknews_custom_style')) {
             p.awpa-more-posts a:hover{
             border-color: <?php darknews_esc_custom_style($secondary_color) ?>;
             }
+            .woocommerce div.product .woocommerce-tabs ul.tabs li.active,
+            body.aft-dark-mode .is-style-outline a.wp-block-button__link:not(.has-text-color),
+            body.aft-default-mode .is-style-outline a.wp-block-button__link:not(.has-text-color),
             .wp-post-author-meta .wp-post-author-meta-more-posts a.awpa-more-posts:hover{
-                border-color: <?php darknews_esc_custom_style($secondary_color) ?>;
+            border-color: <?php darknews_esc_custom_style($secondary_color) ?>;
             }
             #scroll-up::after,
             .aft-dark-mode #loader,
             .aft-default-mode #loader {
-                border-bottom-color: <?php darknews_esc_custom_style($secondary_color) ?>;
+            border-bottom-color: <?php darknews_esc_custom_style($secondary_color) ?>;
             }
+            body.aft-default-mode .woocommerce-loop-product__title:hover,
+            body.aft-dark-mode .woocommerce-loop-product__title:hover,
+            body.aft-dark-mode .is-style-outline a.wp-block-button__link:not(.has-text-color),
+            body.aft-default-mode .is-style-outline a.wp-block-button__link:not(.has-text-color),
             body.aft-default-mode #secondary .darknews-widget ol[class*="wp-block-"] a:hover,
             body.aft-default-mode #secondary .darknews-widget ul[class*="wp-block-"] a:hover,
             body.aft-dark-mode #secondary .darknews-widget ol[class*="wp-block-"] a:hover,
             body.aft-dark-mode #secondary .darknews-widget ul[class*="wp-block-"] a:hover,
             .widget_text a ,
             body.aft-default-mode .sidebar-area .wp-block-tag-cloud a:hover,
-            body.aft-default-mode .site-footer .wp-block-tag-cloud a:hover, 
+            body.aft-default-mode .site-footer .wp-block-tag-cloud a:hover,
             body.aft-default-mode .site-footer .tagcloud a:hover,
-            .wp_post_author_widget .wp-post-author-meta .awpa-display-name a:hover, 
+            .wp_post_author_widget .wp-post-author-meta .awpa-display-name a:hover,
             body.aft-dark-mode .sidebar-area .wp-block-tag-cloud a:hover,
-            body.aft-dark-mode .site-footer .wp-block-tag-cloud a:hover, 
+            body.aft-dark-mode .site-footer .wp-block-tag-cloud a:hover,
             body.aft-dark-mode .site-footer .tagcloud a:hover,
             .wp-post-author-meta .wp-post-author-meta-more-posts a.awpa-more-posts:hover,
             body.aft-default-mode .af-breadcrumbs a:hover,
             body.aft-dark-mode .af-breadcrumbs a:hover,
             .aft-default-mode .site-footer .wp-calendar-nav a,
             body.aft-dark-mode .wp-calendar-nav a,
-            body .entry-content > [class*="wp-block-"] a:not(.has-text-color),
-            body .entry-content > ul a,
-            body .entry-content > ol a,
-            body .entry-content > p a ,
             body p.logged-in-as a,
-            a,  a:visited,  a:hover,  a:focus,  a:active,
+            a, a:visited, a:hover, a:focus, a:active,
+            span.posted_in a:hover,span.tagged_as a:hover ,
+            body.aft-default-mode .wp-post-author-meta .awpa-display-name a:hover,
             body.aft-default-mode .tagcloud a:hover,
             body.aft-default-mode.single span.tags-links a:hover,
             body.aft-default-mode p.awpa-more-posts a:hover,
             body.aft-default-mode p.awpa-website a:hover ,
-            body.aft-default-mode .wp-post-author-meta .awpa-display-name a:hover,
             body.aft-default-mode .widget ul.menu >li a:hover,
             body.aft-default-mode .nav-links a:hover,
             body.aft-default-mode ul.trail-items li a:hover,
@@ -229,19 +243,19 @@ if (!function_exists('darknews_custom_style')) {
             body.aft-default-mode .entry-content > p a:hover,
             .comment-metadata a{
             color:<?php darknews_esc_custom_style($secondary_color) ?>;
-            }   
+            }
 
             @media only screen and (min-width: 992px){
-                body.aft-default-mode .darknews-header .main-navigation .menu-desktop > ul > li:hover > a:before,
-                body.aft-default-mode .darknews-header .main-navigation .menu-desktop > ul > li.current-menu-item > a:before {
-                background-color: <?php darknews_esc_custom_style($secondary_color) ?>;
-                }
+            body.aft-default-mode .darknews-header .main-navigation .menu-desktop > ul > li:hover > a:before,
+            body.aft-default-mode .darknews-header .main-navigation .menu-desktop > ul > li.current-menu-item > a:before {
+            background-color: <?php darknews_esc_custom_style($secondary_color) ?>;
+            }
             }
         <?php endif; ?>
 
-        <?php if (!empty($secondary_color)): ?>
+        <?php if (!empty($secondary_color)) : ?>
             .woocommerce-product-search button[type="submit"], input.search-submit{
-                background-color: <?php darknews_esc_custom_style($secondary_color) ?>;
+            background-color: <?php darknews_esc_custom_style($secondary_color) ?>;
             }
             #wp-calendar tbody td a,
             body.aft-dark-mode #wp-calendar tbody td#today,
@@ -259,81 +273,81 @@ if (!function_exists('darknews_custom_style')) {
             }
 
             @media only screen and (min-width: 993px){
-                .main-navigation .menu-desktop > li.current-menu-item::after, 
-                .main-navigation .menu-desktop > ul > li.current-menu-item::after, 
-                .main-navigation .menu-desktop > li::after, .main-navigation .menu-desktop > ul > li::after{
-                    background-color: <?php darknews_esc_custom_style($secondary_color) ?>;
-                }
+            .main-navigation .menu-desktop > li.current-menu-item::after,
+            .main-navigation .menu-desktop > ul > li.current-menu-item::after,
+            .main-navigation .menu-desktop > li::after, .main-navigation .menu-desktop > ul > li::after{
+            background-color: <?php darknews_esc_custom_style($secondary_color) ?>;
+            }
             }
         <?php endif; ?>
 
 
-        <?php if (!empty($site_title_font)): ?>
-        .site-title {
-        font-family: <?php darknews_esc_custom_style($site_title_font) ?>;
-        }
-    <?php endif; ?>
+        <?php if (!empty($site_title_font)) : ?>
+            .site-title {
+            font-family: <?php darknews_esc_custom_style($site_title_font) ?>;
+            }
+        <?php endif; ?>
 
-        <?php if (!empty($primary_font)): ?>
-        body,
-        button,
-        input,
-        select,
-        optgroup,
-        .cat-links li a,
-        .min-read,
-        .af-social-contacts .social-widget-menu .screen-reader-text,
-        textarea, p {
-        font-family: <?php darknews_esc_custom_style($primary_font) ?>;
-        }
-    <?php endif; ?>
+        <?php if (!empty($primary_font)) : ?>
+            body,
+            button,
+            input,
+            select,
+            optgroup,
+            .cat-links li a,
+            .min-read,
+            .af-social-contacts .social-widget-menu .screen-reader-text,
+            textarea {
+            font-family: <?php darknews_esc_custom_style($primary_font) ?>;
+            }
+        <?php endif; ?>
 
-        <?php if (!empty($secondary_font)): ?>
-        div.custom-menu-link > a,
-        .aft-main-banner-wrapper .nav-tabs>li>a,
-        .aft-posts-tabs-panel .nav-tabs>li>a,
-        .exclusive-posts .exclusive-now span,
-        .aft-posts-tabs-panel .nav-tabs>li>a,
-        .nav-tabs>li,
-        .widget ul ul li,
-        .widget ul.menu >li ,
-        .widget > ul > li,
-        .main-navigation ul li a,
-        h1, h2, h3, h4, h5, h6 {
-        font-family: <?php darknews_esc_custom_style($secondary_font) ?>;
-        }
-    <?php endif; ?>
+        <?php if (!empty($secondary_font)) : ?>
+            .wp-block-search__label,
+            div.custom-menu-link > a,
+            .aft-main-banner-wrapper .nav-tabs>li>a,
+            .aft-posts-tabs-panel .nav-tabs>li>a,
+            .exclusive-posts .exclusive-now span,
+            .aft-posts-tabs-panel .nav-tabs>li>a,
+            .nav-tabs>li,
+            .widget ul ul li,
+            .widget ul.menu >li ,
+            .widget > ul > li,
+            .main-navigation ul li a,
+            h1, h2, h3, h4, h5, h6 {
+            font-family: <?php darknews_esc_custom_style($secondary_font) ?>;
+            }
+        <?php endif; ?>
 
-    .elementor-page .elementor-section.elementor-section-full_width > .elementor-container,
+        .elementor-page .elementor-section.elementor-section-full_width > .elementor-container,
         .elementor-page .elementor-section.elementor-section-boxed > .elementor-container,
         .elementor-default .elementor-section.elementor-section-full_width > .elementor-container,
         .elementor-default .elementor-section.elementor-section-boxed > .elementor-container{
-            max-width: 1244px;
+        max-width: 1244px;
         }
         @media screen and (min-width: 1360px){
-            .af-full-layout.elementor-page .elementor-section.elementor-section-full_width > .elementor-container,
-            .af-full-layout.elementor-page .elementor-section.elementor-section-boxed > .elementor-container,
-            .af-full-layout.elementor-default .elementor-section.elementor-section-full_width > .elementor-container,
-            .af-full-layout.elementor-default .elementor-section.elementor-section-boxed > .elementor-container{
-                max-width: 1920px;
-            }
+        .af-full-layout.elementor-page .elementor-section.elementor-section-full_width > .elementor-container,
+        .af-full-layout.elementor-page .elementor-section.elementor-section-boxed > .elementor-container,
+        .af-full-layout.elementor-default .elementor-section.elementor-section-full_width > .elementor-container,
+        .af-full-layout.elementor-default .elementor-section.elementor-section-boxed > .elementor-container{
+        max-width: 1920px;
+        }
         }
         .full-width-content .elementor-section-stretched,
         .align-content-left .elementor-section-stretched,
         .align-content-right .elementor-section-stretched {
-            max-width: 100%;
-            left: 0 !important;
+        max-width: 100%;
+        left: 0 !important;
         }
-        <?php
+<?php
         return ob_get_clean();
     }
 }
 
 if (!function_exists('darknews_esc_custom_style(')) {
 
-    function darknews_esc_custom_style($props)  {
-        echo wp_kses( $props, array( "\'", '\"' ) );
-        
+    function darknews_esc_custom_style($props)
+    {
+        echo wp_kses($props, array("\'", '\"'));
     }
 }
-
