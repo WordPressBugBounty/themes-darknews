@@ -2,7 +2,7 @@
 Contributors: AF themes
 Requires at least: 4.0
 Tested up to: 6.8
-Stable tag: 3.3.0
+Stable tag: 3.3.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: news, blog, entertainment, one-column, two-columns, grid-layout, block-styles, left-sidebar, right-sidebar, custom-header, flexible-header, custom-background, custom-colors, custom-menu, featured-images, full-width-template, post-formats, sticky-post, rtl-language-support, footer-widgets, translation-ready, theme-options, threaded-comments
@@ -47,6 +47,10 @@ https://afthemes.com/supports/
 DarkNews includes support for Infinite Scroll in Jetpack.
 
 == Change log ==
+= 3.3.2 - Jun 24 2025 =
+* Update - Default admin panel
+* Update - Recommneded plugins
+
 = 3.3.0 - May 22 2025 =
 * Update - Security improvement
 * Update - Block Style improvement

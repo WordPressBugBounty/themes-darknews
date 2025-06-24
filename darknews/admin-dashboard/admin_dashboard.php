@@ -100,7 +100,7 @@ if (!class_exists('AF_themes_info')) {
         $this->menu_name, // Menu Title.
         'edit_posts', // Capability.
         'darknews', // Menu slug.
-        array($this, 'darknews_render_starter_sites'), // Action.
+        array($this, 'darknews_render_page'), // Action.
         $afthemes_icon,
         30
       );
@@ -108,33 +108,14 @@ if (!class_exists('AF_themes_info')) {
       // Our getting started page.
       add_submenu_page(
         'darknews', // Parent slug.
-        __('Starter Sites', 'darknews'), // Page title.
-        __('Starter Sites', 'darknews'), // Menu title.
+        __('Dashboard', 'darknews'), // Page title.
+        __('Dashboard', 'darknews'), // Menu title.
         'manage_options', // Capability.
         'darknews', // Menu slug.
-        array($this, 'darknews_render_starter_sites'), // Callback function.
-        // $starter_sites_order
+        array($this, 'darknews_render_page'), // Callback function.
+        // $get_started_order
       );
 
-      add_submenu_page(
-        'darknews', // Parent slug.
-        __('Block Patterns', 'darknews'), // Page title.
-        __('Block Patterns', 'darknews'), // Menu title.
-        'manage_options', // Capability.
-        $starter_template_slug, // Menu slug.
-        array($this, 'darknews_render_starter_templates'), // Callback function.
-        $starter_sites_order
-      );
-
-      add_submenu_page(
-        'darknews', // Parent slug.
-        __('Elementor Kits', 'darknews'), // Page title.
-        __('Elementor Kits', 'darknews'), // Menu title.
-        'manage_options', // Capability.
-        $template_kits_slug, // Menu slug.
-        array($this, 'darknews_render_templates_kits'), // Callback function.
-        $starter_sites_order
-      );
 
       // Our getting started page.
       add_submenu_page(
@@ -147,25 +128,48 @@ if (!class_exists('AF_themes_info')) {
 
       );
 
-      // Our getting started page.
-      add_submenu_page(
-        'darknews', // Parent slug.
-        __('Settings', 'darknews'), // Page title.
-        __('Settings', 'darknews'), // Menu title.
-        'manage_options', // Capability.
-        'explore-more', // Menu slug.
-        array($this, 'darknews_render_page'), // Callback function.
-        // $get_started_order
-      );
 
       // Our getting started page.
       add_submenu_page(
         'darknews', // Parent slug.
-        __('Upgrade', 'darknews'), // Page title.
-        '<span id="aft-upgrade-menu-item">' . __('Upgrade', 'darknews') .'</span>', // Menu title.
+        __('Starter Sites', 'darknews'), // Page title.
+        __('Starter Sites', 'darknews'), // Menu title.
+        'manage_options', // Capability.
+        'starter-sites', // Menu slug.
+        array($this, 'darknews_render_starter_sites'), // Callback function.
+        // $starter_sites_order
+      );
+
+      add_submenu_page(
+        'darknews', // Parent slug.
+        __('Elementor Kits', 'darknews'), // Page title.
+        __('Elementor Kits', 'darknews'), // Menu title.
+        'manage_options', // Capability.
+        $template_kits_slug, // Menu slug.
+        array($this, 'darknews_render_templates_kits'), // Callback function.
+        // $starter_sites_order
+      );
+
+      add_submenu_page(
+        'darknews', // Parent slug.
+        __('Block Patterns', 'darknews'), // Page title.
+        __('Block Patterns', 'darknews'), // Menu title.
+        'manage_options', // Capability.
+        $starter_template_slug, // Menu slug.
+        array($this, 'darknews_render_starter_templates'), // Callback function.
+        // $starter_sites_order
+      );
+     
+
+
+      // Our getting started page.
+      add_submenu_page(
+        'darknews', // Parent slug.
+        __('Upgrade to Pro', 'darknews'), // Page title.
+        '<span id="aft-upgrade-menu-item">' . __('Upgrade Now', 'darknews') . '</span>', // Menu title.
         'manage_options', // Capability.
         esc_url('https://afthemes.com/products/darknews-pro/') // Menu slug.
-        
+
       );
     }
 
