@@ -11,7 +11,7 @@ $darknews_default = darknews_get_default_theme_options();
 // font Section.
 $wp_customize->add_section('font_typo_section',
     array(
-        'title' => esc_html__('Fonts & Typography', 'darknews'),
+        'title' => __('Fonts & Typography', 'darknews'),
         'priority' => 5,
         'capability' => 'edit_theme_options',
         'panel' => 'theme_option_panel',
@@ -33,7 +33,7 @@ $wp_customize->add_control(
         $wp_customize,
         'site_title_font_section_title',
         array(
-            'label' => esc_html__("Font Family Section", 'darknews'),
+            'label' => __("Font Family Section", 'darknews'),
             'section' => 'font_typo_section',
             'priority' => 100,
 
@@ -53,7 +53,7 @@ $wp_customize->add_setting('site_title_font',
 );
 $wp_customize->add_control('site_title_font',
     array(
-        'label' => esc_html__('Site Title Font', 'darknews'),
+        'label' => __('Site Title Font', 'darknews'),
 
         'section' => 'font_typo_section',
         'type' => 'select',
@@ -72,7 +72,7 @@ $wp_customize->add_setting('primary_font',
 );
 $wp_customize->add_control('primary_font',
     array(
-        'label' => esc_html__('Primary Font', 'darknews'),
+        'label' => __('Primary Font', 'darknews'),
 
         'section' => 'font_typo_section',
         'type' => 'select',
@@ -91,7 +91,7 @@ $wp_customize->add_setting('secondary_font',
 );
 $wp_customize->add_control('secondary_font',
     array(
-        'label' => esc_html__('Secondary Font', 'darknews'),
+        'label' => __('Secondary Font', 'darknews'),
         'section' => 'font_typo_section',
         'type' => 'select',
         'choices' => $darknews_google_fonts,
@@ -111,12 +111,12 @@ $wp_customize->add_setting('global_site_mode_setting',
 
 $wp_customize->add_control('global_site_mode_setting',
     array(
-        'label' => esc_html__('Site Color Mode', 'darknews'),
+        'label' => __('Site Color Mode', 'darknews'),
         'section' => 'colors',
         'type' => 'select',
         'choices' => array(
-            'aft-dark-mode' => esc_html__('Dark', 'darknews'),
-            'aft-default-mode' => esc_html__('Light', 'darknews'),
+            'aft-dark-mode' => __('Dark', 'darknews'),
+            'aft-default-mode' => __('Light', 'darknews'),
         ),
         'priority' => 5,
     ));
@@ -133,7 +133,7 @@ $wp_customize->add_control(
         $wp_customize,
         'global_color_section_notice',
         array(
-            'description' => esc_html__('Body Background Color (Light Mode) will be applied for this mode.', 'darknews'),
+            'description' => __('Body Background Color (Light Mode) will be applied for this mode.', 'darknews'),
             'section' => 'colors',
             'priority' => 10,
             'active_callback' => 'darknews_global_site_mode_light_status'
@@ -156,7 +156,7 @@ $wp_customize->add_control(
         $wp_customize,
         'light_background_color',
         array(
-            'label' => esc_html__('Body Background Color (Light Mode)', 'darknews'),
+            'label' => __('Body Background Color (Light Mode)', 'darknews'),
             'section' => 'colors',
             'type' => 'color',
             'priority' => 10,
@@ -180,7 +180,7 @@ $wp_customize->add_control(
         $wp_customize,
         'secondary_color',
         array(
-            'label' => esc_html__('Secondary Color', 'darknews'),
+            'label' => __('Secondary Color', 'darknews'),
             'section' => 'colors',
             'type' => 'color',
             'priority' => 5,

@@ -26,7 +26,7 @@ require get_template_directory() . '/inc/customizer/customizer-refresh.php';
 // Add Frontpage Options Panel.
 $wp_customize->add_panel('site_header_option_panel',
     array(
-        'title' => esc_html__('Header Options', 'darknews'),
+        'title' => __('Header Options', 'darknews'),
         'priority' => 198,
         'capability' => 'edit_theme_options',
     )
@@ -41,7 +41,7 @@ $wp_customize->add_panel('site_header_option_panel',
 // Frontpage Section.
 $wp_customize->add_section('header_options_settings',
     array(
-        'title' => esc_html__('Header Options', 'darknews'),
+        'title' => __('Header Options', 'darknews'),
         'priority' => 49,
         'capability' => 'edit_theme_options',
         'panel' => 'site_header_option_panel',
@@ -61,7 +61,7 @@ $wp_customize->add_control(
         $wp_customize,
         'show_top_header_section_title',
         array(
-            'label' => esc_html__("Top Header Section", 'darknews'),
+            'label' => __("Top Header Section", 'darknews'),
             'section' => 'header_options_settings',
             'priority' => 10,
 
@@ -81,7 +81,7 @@ $wp_customize->add_setting('show_top_header_section',
 
 $wp_customize->add_control('show_top_header_section',
     array(
-        'label' => esc_html__('Show Top Header', 'darknews'),
+        'label' => __('Show Top Header', 'darknews'),
         'section' => 'header_options_settings',
         'type' => 'checkbox',
         'priority' => 10,
@@ -100,7 +100,7 @@ $wp_customize->add_setting('show_date_section',
 );
 $wp_customize->add_control('show_date_section',
     array(
-        'label' => esc_html__('Show Date', 'darknews'),
+        'label' => __('Show Date', 'darknews'),
         'section' => 'header_options_settings',
         'type' => 'checkbox',
         'priority' => 10,
@@ -121,7 +121,7 @@ $wp_customize->add_setting('show_social_menu_section',
 
 $wp_customize->add_control('show_social_menu_section',
     array(
-        'label' => esc_html__('Show Social Menu', 'darknews'),
+        'label' => __('Show Social Menu', 'darknews'),
         'section' => 'header_options_settings',
         'type' => 'checkbox',
         'priority' => 11,
@@ -134,7 +134,7 @@ $wp_customize->add_control('show_social_menu_section',
 // Advertisement Section.
 $wp_customize->add_section('frontpage_advertisement_settings',
     array(
-        'title' => esc_html__('Header Advertisement', 'darknews'),
+        'title' => __('Header Advertisement', 'darknews'),
         'priority' => 50,
         'capability' => 'edit_theme_options',
         'panel' => 'site_header_option_panel',
@@ -157,8 +157,8 @@ $wp_customize->add_setting('banner_advertisement_section',
 $wp_customize->add_control(
     new WP_Customize_Cropped_Image_Control($wp_customize, 'banner_advertisement_section',
         array(
-            'label' => esc_html__('Header Section Advertisement', 'darknews'),
-            'description' => sprintf(esc_html__('Recommended Size %1$s px X %2$s px', 'darknews'), 930, 110),
+            'label' => __('Header Section Advertisement', 'darknews'),
+            'description' => sprintf(__('Recommended Size %1$s px X %2$s px', 'darknews'), 930, 110),
             'section' => 'frontpage_advertisement_settings',
             'width' => 930,
             'height' => 110,
@@ -179,7 +179,7 @@ $wp_customize->add_setting('banner_advertisement_section_url',
 );
 $wp_customize->add_control('banner_advertisement_section_url',
     array(
-        'label' => esc_html__('URL Link', 'darknews'),
+        'label' => __('URL Link', 'darknews'),
         'section' => 'frontpage_advertisement_settings',
         'type' => 'text',
         'priority' => 130,
@@ -191,7 +191,7 @@ $wp_customize->add_control('banner_advertisement_section_url',
 // Add Theme Options Panel.
 $wp_customize->add_panel('theme_option_panel',
     array(
-        'title' => esc_html__('Theme Options', 'darknews'),
+        'title' => __('Theme Options', 'darknews'),
         'priority' => 200,
         'capability' => 'edit_theme_options',
     )
@@ -209,7 +209,7 @@ $wp_customize->add_setting('global_site_layout_topbottom_gaps',
 
 $wp_customize->add_control('global_site_layout_topbottom_gaps',
     array(
-        'label' => esc_html__("Enable Box's Top/Bottom Gaps", 'darknews'),
+        'label' => __("Enable Box's Top/Bottom Gaps", 'darknews'),
         'section' => 'site_layout_mode_settings',
         'type' => 'checkbox',
         'priority' => 130,
@@ -222,7 +222,7 @@ $wp_customize->add_control('global_site_layout_topbottom_gaps',
 // Breadcrumb Section.
 $wp_customize->add_section('site_breadcrumb_settings',
     array(
-        'title' => esc_html__('Breadcrumb Options', 'darknews'),
+        'title' => __('Breadcrumb Options', 'darknews'),
         'priority' => 49,
         'capability' => 'edit_theme_options',
         'panel' => 'theme_option_panel',
@@ -241,7 +241,7 @@ $wp_customize->add_setting('enable_breadcrumb',
 
 $wp_customize->add_control('enable_breadcrumb',
     array(
-        'label' => esc_html__('Show breadcrumbs', 'darknews'),
+        'label' => __('Show breadcrumbs', 'darknews'),
         'section' => 'site_breadcrumb_settings',
         'type' => 'checkbox',
         'priority' => 10,
@@ -259,15 +259,15 @@ $wp_customize->add_setting('select_breadcrumb_mode',
 
 $wp_customize->add_control('select_breadcrumb_mode',
     array(
-        'label' => esc_html__('Select Breadcrumbs', 'darknews'),
-        'description' => esc_html__("Please ensure that you have enabled the plugin's breadcrumbs before choosing other than Default", 'darknews'),
+        'label' => __('Select Breadcrumbs', 'darknews'),
+        'description' => __("Please ensure that you have enabled the plugin's breadcrumbs before choosing other than Default", 'darknews'),
         'section' => 'site_breadcrumb_settings',
         'type' => 'select',
         'choices' => array(
-            'default' => esc_html__('Default', 'darknews'),
-            'yoast' => esc_html__('Yoast SEO', 'darknews'),
-            'rankmath' => esc_html__('Rank Math', 'darknews'),
-            'bcn' => esc_html__('NavXT', 'darknews'),
+            'default' => __('Default', 'darknews'),
+            'yoast' => __('Yoast SEO', 'darknews'),
+            'rankmath' => __('Rank Math', 'darknews'),
+            'bcn' => __('NavXT', 'darknews'),
         ),
         'priority' => 100,
     ));
@@ -282,7 +282,7 @@ $wp_customize->add_control('select_breadcrumb_mode',
 // Layout Section.
 $wp_customize->add_section('site_layout_settings',
     array(
-        'title' => esc_html__('Global Settings', 'darknews'),
+        'title' => __('Global Settings', 'darknews'),
         'priority' => 9,
         'capability' => 'edit_theme_options',
         'panel' => 'theme_option_panel',
@@ -301,7 +301,7 @@ $wp_customize->add_setting('enable_site_preloader',
 
 $wp_customize->add_control('enable_site_preloader',
     array(
-        'label' => esc_html__('Enable Preloader', 'darknews'),
+        'label' => __('Enable Preloader', 'darknews'),
         'section' => 'site_layout_settings',
         'type' => 'checkbox',
         'priority' => 10,
@@ -319,12 +319,12 @@ $wp_customize->add_setting('global_site_layout_setting',
 
 $wp_customize->add_control('global_site_layout_setting',
     array(
-        'label' => esc_html__('Site Layout Option', 'darknews'),
+        'label' => __('Site Layout Option', 'darknews'),
         'section' => 'site_layout_settings',
         'type' => 'select',
         'choices' => array(
-            'boxed' => esc_html__("Boxed", 'darknews'),
-            'wide' => esc_html__("Wide", 'darknews'),
+            'boxed' => __("Boxed", 'darknews'),
+            'wide' => __("Wide", 'darknews'),
         ),
         'priority' => 130,
     ));
@@ -342,13 +342,13 @@ $wp_customize->add_setting('global_content_alignment',
 
 $wp_customize->add_control('global_content_alignment',
     array(
-        'label' => esc_html__('Global Content Alignment', 'darknews'),
+        'label' => __('Global Content Alignment', 'darknews'),
         'section' => 'site_layout_settings',
         'type' => 'select',
         'choices' => array(
-            'align-content-left' => esc_html__('Content - Primary sidebar', 'darknews'),
-            'align-content-right' => esc_html__('Primary sidebar - Content', 'darknews'),
-            'full-width-content' => esc_html__('Full width content', 'darknews')
+            'align-content-left' => __('Content - Primary sidebar', 'darknews'),
+            'align-content-right' => __('Primary sidebar - Content', 'darknews'),
+            'full-width-content' => __('Full width content', 'darknews')
         ),
         'priority' => 130,
     ));
@@ -366,12 +366,12 @@ $wp_customize->add_setting('global_single_content_mode',
 
 $wp_customize->add_control( 'global_single_content_mode',
     array(
-        'label'       => esc_html__('Single Content Mode', 'darknews'),
+        'label'       => __('Single Content Mode', 'darknews'),
         'section'     => 'site_layout_settings',
         'type'        => 'select',
         'choices'               => array(
-            'single-content-mode-default' => esc_html__( 'Default', 'darknews' ),
-            'single-content-mode-boxed' => esc_html__( 'Spacious', 'darknews' ),
+            'single-content-mode-default' => __( 'Default', 'darknews' ),
+            'single-content-mode-boxed' => __( 'Spacious', 'darknews' ),
         ),
         'priority'    => 130,
     ));
@@ -389,13 +389,13 @@ $wp_customize->add_setting('global_scroll_to_top_position',
 
 $wp_customize->add_control('global_scroll_to_top_position',
     array(
-        'label' => esc_html__('Scroll to Top Position', 'darknews'),
+        'label' => __('Scroll to Top Position', 'darknews'),
         'section' => 'site_layout_settings',
         'type' => 'select',
         'choices' => array(
-            'right' => esc_html__('Right', 'darknews'),
-            'left' => esc_html__('Left', 'darknews'),
-            'none' => esc_html__('None', 'darknews')
+            'right' => __('Right', 'darknews'),
+            'left' => __('Left', 'darknews'),
+            'none' => __('None', 'darknews')
 
         ),
         'priority' => 130,
@@ -406,7 +406,7 @@ $wp_customize->add_control('global_scroll_to_top_position',
 // Global Section.
 $wp_customize->add_section('site_categories_settings',
     array(
-        'title' => esc_html__('Categories Settings', 'darknews'),
+        'title' => __('Categories Settings', 'darknews'),
         'priority' => 50,
         'capability' => 'edit_theme_options',
         'panel' => 'theme_option_panel',
@@ -424,12 +424,12 @@ $wp_customize->add_setting('global_show_categories',
 
 $wp_customize->add_control('global_show_categories',
     array(
-        'label' => esc_html__('Post Categories', 'darknews'),
+        'label' => __('Post Categories', 'darknews'),
         'section' => 'site_categories_settings',
         'type' => 'select',
         'choices' => array(
-            'yes' => esc_html__('Show', 'darknews'),
-            'no' => esc_html__('Hide', 'darknews'),
+            'yes' => __('Show', 'darknews'),
+            'no' => __('Hide', 'darknews'),
 
         ),
         'priority' => 130,
@@ -447,12 +447,12 @@ $wp_customize->add_setting('global_number_of_categories',
 
 $wp_customize->add_control('global_number_of_categories',
     array(
-        'label' => esc_html__('Categories to be displayed', 'darknews'),
+        'label' => __('Categories to be displayed', 'darknews'),
         'section' => 'site_categories_settings',
         'type' => 'select',
         'choices' => array(
-            'all' => esc_html__('Show All', 'darknews'),
-            'one' => esc_html__('Top One Category', 'darknews'),
+            'all' => __('Show All', 'darknews'),
+            'one' => __('Top One Category', 'darknews'),
 
 
         ),
@@ -470,7 +470,7 @@ $wp_customize->add_setting('global_custom_number_of_categories',
 );
 $wp_customize->add_control('global_custom_number_of_categories',
     array(
-        'label' => esc_html__('Number of Categories', 'darknews'),
+        'label' => __('Number of Categories', 'darknews'),
         'section' => 'site_categories_settings',
         'type' => 'number',
         'priority' => 130,
@@ -490,12 +490,12 @@ $wp_customize->add_setting('global_show_comment_count',
 
 $wp_customize->add_control('global_show_comment_count',
     array(
-        'label' => esc_html__('Comment Count', 'darknews'),
+        'label' => __('Comment Count', 'darknews'),
         'section' => 'site_layout_settings',
         'type' => 'select',
         'choices' => array(
-            'yes' => esc_html__('Show', 'darknews'),
-            'no' => esc_html__('Hide', 'darknews'),
+            'yes' => __('Show', 'darknews'),
+            'no' => __('Hide', 'darknews'),
 
         ),
         'priority' => 130,
@@ -506,7 +506,7 @@ $wp_customize->add_control('global_show_comment_count',
 // Global Section.
 $wp_customize->add_section('site_author_and_date_settings',
     array(
-        'title' => esc_html__('Author and Date Settings', 'darknews'),
+        'title' => __('Author and Date Settings', 'darknews'),
         'priority' => 50,
         'capability' => 'edit_theme_options',
         'panel' => 'theme_option_panel',
@@ -525,12 +525,12 @@ $wp_customize->add_setting('global_post_date_author_setting',
 
 $wp_customize->add_control('global_post_date_author_setting',
     array(
-        'label' => esc_html__('For Spotlight Posts', 'darknews'),
+        'label' => __('For Spotlight Posts', 'darknews'),
         'section' => 'site_author_and_date_settings',
         'type' => 'select',
         'choices' => array(
-            'show-date-author' => esc_html__('Show Date and Author', 'darknews'),
-            'hide-date-author' => esc_html__('Hide All', 'darknews'),
+            'show-date-author' => __('Show Date and Author', 'darknews'),
+            'hide-date-author' => __('Hide All', 'darknews'),
         ),
         'priority' => 130,
     ));
@@ -547,12 +547,12 @@ $wp_customize->add_setting('small_grid_post_date_author_setting',
 
 $wp_customize->add_control('small_grid_post_date_author_setting',
     array(
-        'label' => esc_html__('For Small Grid', 'darknews'),
+        'label' => __('For Small Grid', 'darknews'),
         'section' => 'site_author_and_date_settings',
         'type' => 'select',
         'choices' => array(
-            'show-date-only' => esc_html__('Show Date', 'darknews'),
-            'hide-date-author' => esc_html__('Hide', 'darknews'),
+            'show-date-only' => __('Show Date', 'darknews'),
+            'hide-date-author' => __('Hide', 'darknews'),
         ),
         'priority' => 130,
     ));
@@ -568,12 +568,12 @@ $wp_customize->add_setting('list_post_date_author_setting',
 
 $wp_customize->add_control('list_post_date_author_setting',
     array(
-        'label' => esc_html__('For List', 'darknews'),
+        'label' => __('For List', 'darknews'),
         'section' => 'site_author_and_date_settings',
         'type' => 'select',
         'choices' => array(
-            'show-date-only' => esc_html__('Show Date', 'darknews'),
-            'hide-date-author' => esc_html__('Hide', 'darknews'),
+            'show-date-only' => __('Show Date', 'darknews'),
+            'hide-date-author' => __('Hide', 'darknews'),
         ),
         'priority' => 130,
     ));
@@ -589,13 +589,13 @@ $wp_customize->add_setting('global_author_icon_gravatar_display_setting',
 
 $wp_customize->add_control('global_author_icon_gravatar_display_setting',
     array(
-        'label' => esc_html__('Author Icon/Gravatar', 'darknews'),
+        'label' => __('Author Icon/Gravatar', 'darknews'),
         'section' => 'site_author_and_date_settings',
         'type' => 'select',
         'choices' => array(
-            'display-gravatar' => esc_html__('Show Gravatar', 'darknews'),
-            'display-icon' => esc_html__('Show Icon', 'darknews'),
-            'display-none' => esc_html__('None', 'darknews'),
+            'display-gravatar' => __('Show Gravatar', 'darknews'),
+            'display-icon' => __('Show Icon', 'darknews'),
+            'display-none' => __('None', 'darknews'),
         ),
         'priority' => 130,
         'active_callback' => 'darknews_display_author_status'
@@ -613,12 +613,12 @@ $wp_customize->add_setting('global_date_display_setting',
 
 $wp_customize->add_control('global_date_display_setting',
     array(
-        'label' => esc_html__('Date Format', 'darknews'),
+        'label' => __('Date Format', 'darknews'),
         'section' => 'site_author_and_date_settings',
         'type' => 'select',
         'choices' => array(
-            'default-date' => esc_html__('WordPress Default Date Format', 'darknews'),
-            'theme-date' => esc_html__('Ago Date Format', 'darknews'),
+            'default-date' => __('WordPress Default Date Format', 'darknews'),
+            'theme-date' => __('Ago Date Format', 'darknews'),
         ),
         'priority' => 130,
         'active_callback' => 'darknews_display_date_status'
@@ -631,7 +631,7 @@ $wp_customize->add_control('global_date_display_setting',
 // Global Section.
 $wp_customize->add_section('site_min_read_settings',
     array(
-        'title' => esc_html__('Minutes Read Count', 'darknews'),
+        'title' => __('Minutes Read Count', 'darknews'),
         'priority' => 50,
         'capability' => 'edit_theme_options',
         'panel' => 'theme_option_panel',
@@ -650,12 +650,12 @@ $wp_customize->add_setting('global_show_min_read',
 
 $wp_customize->add_control('global_show_min_read',
     array(
-        'label' => esc_html__('Minutes Read Count', 'darknews'),
+        'label' => __('Minutes Read Count', 'darknews'),
         'section' => 'site_min_read_settings',
         'type' => 'select',
         'choices' => array(
-            'yes' => esc_html__('Show', 'darknews'),
-            'no' => esc_html__('Hide', 'darknews'),
+            'yes' => __('Show', 'darknews'),
+            'no' => __('Hide', 'darknews'),
 
         ),
         'priority' => 130,
@@ -666,7 +666,7 @@ $wp_customize->add_control('global_show_min_read',
 // Global Section.
 $wp_customize->add_section('site_excerpt_settings',
     array(
-        'title' => esc_html__('Excerpt Settings', 'darknews'),
+        'title' => __('Excerpt Settings', 'darknews'),
         'priority' => 50,
         'capability' => 'edit_theme_options',
         'panel' => 'theme_option_panel',
@@ -726,7 +726,7 @@ $wp_customize->add_control(
         $wp_customize,
         'show_watch_online_section_section_title',
         array(
-            'label' => esc_html__("Custom Menu Section", 'darknews'),
+            'label' => __("Custom Menu Section", 'darknews'),
             'section' => 'header_options_settings',
             'priority' => 100,
 
@@ -744,7 +744,7 @@ $wp_customize->add_setting('show_watch_online_section',
 
 $wp_customize->add_control('show_watch_online_section',
     array(
-        'label' => esc_html__('Enable Custom Menu Section', 'darknews'),
+        'label' => __('Enable Custom Menu Section', 'darknews'),
         'section' => 'header_options_settings',
         'settings' => 'show_watch_online_section',
         'type' => 'checkbox',
@@ -799,7 +799,7 @@ $wp_customize->add_control('aft_custom_link',
 // Single Section.
 $wp_customize->add_section('site_single_posts_settings',
     array(
-        'title' => esc_html__('Single Post', 'darknews'),
+        'title' => __('Single Post', 'darknews'),
         'priority' => 9,
         'capability' => 'edit_theme_options',
         'panel' => 'theme_option_panel',
@@ -840,7 +840,7 @@ $wp_customize->add_control(
         $wp_customize,
         'single_related_posts_section_title',
         array(
-            'label' => esc_html__("Related Posts Settings", 'darknews'),
+            'label' => __("Related Posts Settings", 'darknews'),
             'section' => 'site_single_posts_settings',
             'priority' => 100,
 
@@ -897,7 +897,7 @@ $wp_customize->add_control('single_related_posts_title',
 // Archive Section.
 $wp_customize->add_section('site_archive_settings',
     array(
-        'title' => esc_html__('Archive Settings', 'darknews'),
+        'title' => __('Archive Settings', 'darknews'),
         'priority' => 9,
         'capability' => 'edit_theme_options',
         'panel' => 'theme_option_panel',
@@ -916,7 +916,7 @@ $wp_customize->add_setting('disable_main_banner_on_blog_archive',
 
 $wp_customize->add_control('disable_main_banner_on_blog_archive',
     array(
-        'label'    => esc_html__('Disable Main Banner on Blog', 'darknews'),
+        'label'    => __('Disable Main Banner on Blog', 'darknews'),
         'section'  => 'site_archive_settings',
         'type'     => 'checkbox',
         'priority' => 50,
@@ -935,13 +935,13 @@ $wp_customize->add_setting('archive_layout',
 
 $wp_customize->add_control('archive_layout',
     array(
-        'label' => esc_html__('Archive layout', 'darknews'),
-        'description' => esc_html__('Select layout for archive', 'darknews'),
+        'label' => __('Archive layout', 'darknews'),
+        'description' => __('Select layout for archive', 'darknews'),
         'section' => 'site_archive_settings',
         'type' => 'select',
         'choices' => array(
-            'archive-layout-grid' => esc_html__('Grid', 'darknews'),
-            'archive-layout-full' => esc_html__('Full', 'darknews'),
+            'archive-layout-grid' => __('Grid', 'darknews'),
+            'archive-layout-full' => __('Full', 'darknews'),
 
         ),
         'priority' => 130,
@@ -979,13 +979,13 @@ $wp_customize->add_setting('archive_grid_column_layout',
 
 $wp_customize->add_control('archive_grid_column_layout',
     array(
-        'label' => esc_html__('Grid Column Layout', 'darknews'),
-        'description' => esc_html__('Select column for archive grid', 'darknews'),
+        'label' => __('Grid Column Layout', 'darknews'),
+        'description' => __('Select column for archive grid', 'darknews'),
         'section' => 'site_archive_settings',
         'type' => 'select',
         'choices' => array(
-            'grid-layout-two' => esc_html__('Two Column', 'darknews'),
-            'grid-layout-three' => esc_html__('Three Column', 'darknews'),
+            'grid-layout-two' => __('Two Column', 'darknews'),
+            'grid-layout-three' => __('Three Column', 'darknews'),
 
         ),
         'priority' => 130,
@@ -1004,13 +1004,13 @@ $wp_customize->add_setting('archive_layout_full',
 
 $wp_customize->add_control('archive_layout_full',
     array(
-        'label' => esc_html__('Select Full Layout', 'darknews'),
-        'description' => esc_html__('Select full layout for archive', 'darknews'),
+        'label' => __('Select Full Layout', 'darknews'),
+        'description' => __('Select full layout for archive', 'darknews'),
         'section' => 'site_archive_settings',
         'type' => 'select',
         'choices' => array(
-            'full-image-first' => esc_html__('Posts Title After Image', 'darknews'),
-            'full-title-first' => esc_html__('Posts Title Before Image', 'darknews'),
+            'full-image-first' => __('Posts Title After Image', 'darknews'),
+            'full-title-first' => __('Posts Title Before Image', 'darknews'),
 
         ),
         'priority' => 130,
@@ -1028,14 +1028,14 @@ $wp_customize->add_setting('archive_content_view',
 
 $wp_customize->add_control('archive_content_view',
     array(
-        'label' => esc_html__('Content View', 'darknews'),
-        'description' => esc_html__('Select content view for archive', 'darknews'),
+        'label' => __('Content View', 'darknews'),
+        'description' => __('Select content view for archive', 'darknews'),
         'section' => 'site_archive_settings',
         'type' => 'select',
         'choices' => array(
-            'archive-content-excerpt' => esc_html__('Post Excerpt', 'darknews'),
-            'archive-content-full' => esc_html__('Full Content', 'darknews'),
-            'archive-content-none' => esc_html__('None', 'darknews'),
+            'archive-content-excerpt' => __('Post Excerpt', 'darknews'),
+            'archive-content-full' => __('Full Content', 'darknews'),
+            'archive-content-none' => __('None', 'darknews'),
 
         ),
         'priority' => 130,
@@ -1046,7 +1046,7 @@ $wp_customize->add_control('archive_content_view',
 // Trending Section.
 $wp_customize->add_section('sidebar_block_settings',
     array(
-        'title' => esc_html__('Sidebar Settings', 'darknews'),
+        'title' => __('Sidebar Settings', 'darknews'),
         'priority' => 9,
         'capability' => 'edit_theme_options',
         'panel' => 'theme_option_panel',
@@ -1065,7 +1065,7 @@ $wp_customize->add_setting('frontpage_sticky_sidebar',
 
 $wp_customize->add_control('frontpage_sticky_sidebar',
     array(
-        'label' => esc_html__('Make Sidebar Sticky', 'darknews'),
+        'label' => __('Make Sidebar Sticky', 'darknews'),
         'section' => 'sidebar_block_settings',
         'type' => 'checkbox',
         'priority' => 100,
@@ -1084,12 +1084,12 @@ $wp_customize->add_setting('frontpage_sticky_sidebar_position',
 
 $wp_customize->add_control('frontpage_sticky_sidebar_position',
     array(
-        'label' => esc_html__('Sidebar Sticky Position', 'darknews'),
+        'label' => __('Sidebar Sticky Position', 'darknews'),
         'section' => 'sidebar_block_settings',
         'type' => 'select',
         'choices' => array(
-            'sidebar-sticky-top' => esc_html__('Top', 'darknews'),
-            'sidebar-sticky-bottom' => esc_html__('Bottom', 'darknews'),
+            'sidebar-sticky-top' => __('Top', 'darknews'),
+            'sidebar-sticky-bottom' => __('Bottom', 'darknews'),
         ),
         'priority' => 100,
         'active_callback' => 'frontpage_sticky_sidebar_status'
@@ -1100,7 +1100,7 @@ $wp_customize->add_control('frontpage_sticky_sidebar_position',
 // Footer Section.
 $wp_customize->add_section('frontpage_latest_posts_settings',
     array(
-        'title' => esc_html__('You May Have Missed', 'darknews'),
+        'title' => __('You May Have Missed', 'darknews'),
         'priority' => 50,
         'capability' => 'edit_theme_options',
         'panel' => 'theme_option_panel',
@@ -1135,7 +1135,7 @@ $wp_customize->add_setting('frontpage_latest_posts_section_title',
 );
 $wp_customize->add_control('frontpage_latest_posts_section_title',
     array(
-        'label' => esc_html__('Posts Section Title', 'darknews'),
+        'label' => __('Posts Section Title', 'darknews'),
         'section' => 'frontpage_latest_posts_settings',
         'type' => 'text',
         'priority' => 100,
@@ -1148,7 +1148,7 @@ $wp_customize->add_control('frontpage_latest_posts_section_title',
 // Footer Section.
 $wp_customize->add_section('site_footer_settings',
     array(
-        'title' => esc_html__('Footer', 'darknews'),
+        'title' => __('Footer', 'darknews'),
         'priority' => 50,
         'capability' => 'edit_theme_options',
         'panel' => 'theme_option_panel',
@@ -1169,8 +1169,8 @@ $wp_customize->add_setting('footer_background_image',
 $wp_customize->add_control(
     new WP_Customize_Cropped_Image_Control($wp_customize, 'footer_background_image',
         array(
-            'label' => esc_html__('Footer Background Image', 'darknews'),
-            'description' => sprintf(esc_html__('Recommended Size %1$s px X %2$s px', 'darknews'), 1024, 800),
+            'label' => __('Footer Background Image', 'darknews'),
+            'description' => sprintf(__('Recommended Size %1$s px X %2$s px', 'darknews'), 1024, 800),
             'section' => 'site_footer_settings',
             'width' => 1024,
             'height' => 800,

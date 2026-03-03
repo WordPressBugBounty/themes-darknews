@@ -87,7 +87,7 @@ function darknews_customize_register($wp_customize) {
 
     $wp_customize->add_control('site_title_font_size',
         array(
-            'label'    => esc_html__('Site Title Size', 'darknews'),
+            'label'    => __('Site Title Size', 'darknews'),
             'section'  => 'title_tagline',
             'type'     => 'number',
             'priority' => 50,
@@ -112,13 +112,13 @@ function darknews_customize_register($wp_customize) {
 
     $wp_customize->add_control( 'select_header_image_mode',
         array(
-            'label'       => esc_html__('Header Image Mode', 'darknews'),
-            'description'       => esc_html__('Image visibility may vary as per the mode', 'darknews'),
+            'label'       => __('Header Image Mode', 'darknews'),
+            'description'       => __('Image visibility may vary as per the mode', 'darknews'),
             'section'     => 'header_image',
             'type'        => 'select',
             'choices'               => array(
-                'default' => esc_html__( "Set as Background", 'darknews' ),
-                'full' => esc_html__( "Show Full Image", 'darknews' ),
+                'default' => __( "Set as Background", 'darknews' ),
+                'full' => __( "Show Full Image", 'darknews' ),
             ),
             'priority'    => 50
         ));
@@ -134,7 +134,7 @@ function darknews_customize_register($wp_customize) {
 
     $wp_customize->add_control('disable_header_image_tint_overlay',
         array(
-            'label'    => esc_html__('Disable Image Tint/Overlay', 'darknews'),
+            'label'    => __('Disable Image Tint/Overlay', 'darknews'),
             'section'  => 'header_image',
             'type'     => 'checkbox',
             'priority' => 50,
@@ -156,8 +156,8 @@ function darknews_customize_register($wp_customize) {
             $wp_customize,
             'theme_upsell',
             array(
-                'title'    => esc_html__( 'DarkNews Pro', 'darknews' ),
-                'pro_text' => esc_html__( 'Upgrade Now', 'darknews' ),
+                'title'    => __( 'DarkNews Pro', 'darknews' ),
+                'pro_text' => __( 'Upgrade Now', 'darknews' ),
                 'pro_url'  => 'https://www.afthemes.com/products/darknews-pro/',
                 'priority'  => 1,
             )
