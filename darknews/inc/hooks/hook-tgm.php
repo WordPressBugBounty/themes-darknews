@@ -36,6 +36,11 @@ if ( ! function_exists( 'darknews_recommended_plugins' ) ) :
                 'required' => false,
             ),
             array(
+                'name'     => esc_html__( 'AF Companion', 'darknews' ),
+                'slug'     => 'af-companion',
+                'required' => false,
+            ),
+            array(
                 'name'     => esc_html__( 'Free Live Chat using 3CX', 'darknews' ),
                 'slug'     => 'wp-live-chat-support',
                 'required' => false,
