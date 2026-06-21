@@ -47,7 +47,8 @@ if (1 == $enable_preloader):
 
     do_action('darknews_action_header_section');
 
-
+    $page_template = get_page_template_slug();
+    if ($page_template !== 'page-templates/full-width.php') {
     // get current page we are on. If not set we can assume we are on page 1.
     $darknews_paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
@@ -72,7 +73,9 @@ if (1 == $enable_preloader):
 
         ?>
 
-    <?php endif; ?>
+    <?php endif; 
+    }
+    ?>
     <div id="content" class="container-wrapper">
         <?php
 
