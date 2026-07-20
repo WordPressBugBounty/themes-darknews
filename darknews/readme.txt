@@ -1,8 +1,8 @@
 === DarkNews ===
 Contributors: AF themes
 Requires at least: 4.0
-Tested up to: 6.9
-Stable tag: 3.3.10
+Tested up to: 7.0
+Stable tag: 3.5.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: news, blog, entertainment, one-column, two-columns, grid-layout, block-styles, left-sidebar, right-sidebar, custom-header, flexible-header, custom-background, custom-colors, custom-menu, featured-images, full-width-template, post-formats, sticky-post, rtl-language-support, footer-widgets, translation-ready, theme-options, threaded-comments
@@ -17,7 +17,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 DarkNews is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
-DarkNews WordPress Theme, Copyright 2021 AF themes
+DarkNews WordPress Theme, Copyright 2026 AF themes
 DarkNews is distributed under the terms of the GNU GPL v2 or later.
 
 == Description ==
