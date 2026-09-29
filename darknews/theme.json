@@ -17,7 +17,13 @@
         "typography": {
             "fluid": true,
             "writingMode": true
-        }
+        },
+        "border": {
+    "color": true,
+    "radius": true,
+    "style": true,
+    "width": true
+}
     },
     "styles": {
         "blocks": {
